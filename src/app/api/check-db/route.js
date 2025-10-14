@@ -4,7 +4,9 @@ import { NextResponse } from 'next/server';
 
 const require = createRequire(import.meta.url);
 // adjust the path if your lib is at a different level
-const pool = require('../../../../lib/db'); // <-- from src/app/api -> up to project root then lib/db.js
+
+const pool = require('@/lib/db');
+
 
 export async function GET() {
   try {
