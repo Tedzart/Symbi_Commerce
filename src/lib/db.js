@@ -1,17 +1,23 @@
 // lib/db.js
 const { Pool } = require('pg');
 
-const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'postgres',
-  password: 'post', // ← Verify this is correct
-  port: 5432,
-});
+const connectionString = process.env.DATABASE_URL;
+if (!connectionString) {
+  // Fail fast so the error is visible in logs instead of silently using localhost
+  throw new Error(
+    'Missing DATABASE_URL environment variable. Set it in Vercel (Settings → Environment Variables).'
+  );
+}
 
-// Test the connection immediately
-pool.query('SELECT NOW()')
-  .then(() => console.log('Database connected successfully'))
-  .catch(err => console.error('Database connection error:', err));
+let pool = global.__pgPool;
 
-module.exports = pool; // ← Must export the pool
+if (!pool) {
+  pool = new Pool({
+    connectionString,
+    ssl: { rejectUnauthorized: false }, // required for Neon
+    max: 10, // tune down if you see "too many connections"
+  });
+  global.__pgPool = pool;
+}
+
+module.exports = pool;
