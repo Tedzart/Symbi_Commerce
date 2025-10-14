@@ -1,0 +1,195 @@
+pg_restore: connecting to database for restore
+pg_restore: dropping FK CONSTRAINT sessions sessions_user_id_fkey
+pg_restore: dropping FK CONSTRAINT orders orders_user_id_fkey
+pg_restore: dropping FK CONSTRAINT order_items order_items_user_id_fkey
+pg_restore: dropping FK CONSTRAINT order_items order_items_product_id_fkey
+pg_restore: dropping FK CONSTRAINT order_items order_items_order_id_fkey
+pg_restore: dropping FK CONSTRAINT carts carts_user_id_fkey
+pg_restore: dropping FK CONSTRAINT cart_items cart_items_product_id_fkey
+pg_restore: dropping FK CONSTRAINT cart_items cart_items_cart_id_fkey
+pg_restore: dropping CONSTRAINT sessions sessions_token_key
+pg_restore: dropping CONSTRAINT sessions sessions_pkey
+pg_restore: dropping CONSTRAINT products products_pkey
+pg_restore: dropping CONSTRAINT orders orders_pkey
+pg_restore: dropping CONSTRAINT order_items order_items_pkey
+pg_restore: dropping CONSTRAINT cusinfo cusinfo_pkey
+pg_restore: dropping CONSTRAINT cusinfo cusinfo_email_key
+pg_restore: dropping CONSTRAINT carts carts_pkey
+pg_restore: dropping CONSTRAINT cart_items cart_items_pkey
+pg_restore: dropping DEFAULT sessions id
+pg_restore: dropping DEFAULT products id
+pg_restore: dropping DEFAULT orders id
+pg_restore: dropping DEFAULT order_items id
+pg_restore: dropping DEFAULT cusinfo id
+pg_restore: dropping DEFAULT carts id
+pg_restore: dropping DEFAULT cart_items id
+pg_restore: dropping SEQUENCE sessions_id_seq
+pg_restore: dropping TABLE sessions
+pg_restore: dropping SEQUENCE products_id_seq
+pg_restore: dropping TABLE products
+pg_restore: dropping SEQUENCE orders_id_seq
+pg_restore: dropping TABLE orders
+pg_restore: dropping SEQUENCE order_items_id_seq
+pg_restore: dropping TABLE order_items
+pg_restore: dropping SEQUENCE cusinfo_id_seq
+pg_restore: dropping TABLE cusinfo
+pg_restore: dropping SEQUENCE carts_id_seq
+pg_restore: dropping TABLE carts
+pg_restore: dropping SEQUENCE cart_items_id_seq
+pg_restore: dropping TABLE cart_items
+pg_restore: processing item 4935 ENCODING ENCODING
+pg_restore: processing item 4936 STDSTRINGS STDSTRINGS
+pg_restore: processing item 4937 SEARCHPATH SEARCHPATH
+pg_restore: processing item 4938 DATABASE postgres
+pg_restore: processing item 4939 COMMENT DATABASE postgres
+pg_restore: processing item 226 TABLE cart_items
+pg_restore: creating TABLE "public.cart_items"
+pg_restore: processing item 225 SEQUENCE cart_items_id_seq
+pg_restore: creating SEQUENCE "public.cart_items_id_seq"
+pg_restore: processing item 4940 SEQUENCE OWNED BY cart_items_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.cart_items_id_seq"
+pg_restore: processing item 224 TABLE carts
+pg_restore: creating TABLE "public.carts"
+pg_restore: processing item 223 SEQUENCE carts_id_seq
+pg_restore: creating SEQUENCE "public.carts_id_seq"
+pg_restore: processing item 4941 SEQUENCE OWNED BY carts_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.carts_id_seq"
+pg_restore: processing item 218 TABLE cusinfo
+pg_restore: creating TABLE "public.cusinfo"
+pg_restore: processing item 217 SEQUENCE cusinfo_id_seq
+pg_restore: creating SEQUENCE "public.cusinfo_id_seq"
+pg_restore: processing item 4942 SEQUENCE OWNED BY cusinfo_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.cusinfo_id_seq"
+pg_restore: processing item 230 TABLE order_items
+pg_restore: creating TABLE "public.order_items"
+pg_restore: processing item 229 SEQUENCE order_items_id_seq
+pg_restore: creating SEQUENCE "public.order_items_id_seq"
+pg_restore: processing item 4943 SEQUENCE OWNED BY order_items_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.order_items_id_seq"
+pg_restore: processing item 228 TABLE orders
+pg_restore: creating TABLE "public.orders"
+pg_restore: processing item 227 SEQUENCE orders_id_seq
+pg_restore: creating SEQUENCE "public.orders_id_seq"
+pg_restore: processing item 4944 SEQUENCE OWNED BY orders_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.orders_id_seq"
+pg_restore: processing item 220 TABLE products
+pg_restore: creating TABLE "public.products"
+pg_restore: processing item 219 SEQUENCE products_id_seq
+pg_restore: creating SEQUENCE "public.products_id_seq"
+pg_restore: processing item 4945 SEQUENCE OWNED BY products_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.products_id_seq"
+pg_restore: processing item 222 TABLE sessions
+pg_restore: creating TABLE "public.sessions"
+pg_restore: processing item 221 SEQUENCE sessions_id_seq
+pg_restore: creating SEQUENCE "public.sessions_id_seq"
+pg_restore: processing item 4946 SEQUENCE OWNED BY sessions_id_seq
+pg_restore: creating SEQUENCE OWNED BY "public.sessions_id_seq"
+pg_restore: processing item 4738 DEFAULT cart_items id
+pg_restore: creating DEFAULT "public.cart_items id"
+pg_restore: processing item 4735 DEFAULT carts id
+pg_restore: creating DEFAULT "public.carts id"
+pg_restore: processing item 4726 DEFAULT cusinfo id
+pg_restore: creating DEFAULT "public.cusinfo id"
+pg_restore: processing item 4744 DEFAULT order_items id
+pg_restore: creating DEFAULT "public.order_items id"
+pg_restore: processing item 4741 DEFAULT orders id
+pg_restore: creating DEFAULT "public.orders id"
+pg_restore: processing item 4729 DEFAULT products id
+pg_restore: creating DEFAULT "public.products id"
+pg_restore: processing item 4733 DEFAULT sessions id
+pg_restore: creating DEFAULT "public.sessions id"
+pg_restore: entering main parallel loop
+pg_restore: launching item 4922 TABLE DATA products
+pg_restore: launching item 4920 TABLE DATA cusinfo
+pg_restore: launching item 4930 TABLE DATA orders
+pg_restore: launching item 4932 TABLE DATA order_items
+pg_restore: processing data for table "public.products"
+pg_restore: processing data for table "public.order_items"
+pg_restore: processing data for table "public.orders"
+pg_restore: processing data for table "public.cusinfo"
+pg_restore: finished item 4922 TABLE DATA products
+pg_restore: launching item 4753 CONSTRAINT products products_pkey
+pg_restore: creating CONSTRAINT "public.products products_pkey"
+pg_restore: finished item 4932 TABLE DATA order_items
+pg_restore: launching item 4765 CONSTRAINT order_items order_items_pkey
+pg_restore: creating CONSTRAINT "public.order_items order_items_pkey"
+pg_restore: finished item 4930 TABLE DATA orders
+pg_restore: launching item 4763 CONSTRAINT orders orders_pkey
+pg_restore: creating CONSTRAINT "public.orders orders_pkey"
+pg_restore: finished item 4920 TABLE DATA cusinfo
+pg_restore: launching item 4749 CONSTRAINT cusinfo cusinfo_email_key
+pg_restore: creating CONSTRAINT "public.cusinfo cusinfo_email_key"
+pg_restore: finished item 4753 CONSTRAINT products products_pkey
+pg_restore: launching item 4924 TABLE DATA sessions
+pg_restore: processing data for table "public.sessions"
+pg_restore: finished item 4765 CONSTRAINT order_items order_items_pkey
+pg_restore: launching item 4772 FK CONSTRAINT order_items order_items_product_id_fkey
+pg_restore: creating FK CONSTRAINT "public.order_items order_items_product_id_fkey"
+pg_restore: finished item 4763 CONSTRAINT orders orders_pkey
+pg_restore: launching item 4926 TABLE DATA carts
+pg_restore: processing data for table "public.carts"
+pg_restore: finished item 4749 CONSTRAINT cusinfo cusinfo_email_key
+pg_restore: launching item 4751 CONSTRAINT cusinfo cusinfo_pkey
+pg_restore: creating CONSTRAINT "public.cusinfo cusinfo_pkey"
+pg_restore: finished item 4772 FK CONSTRAINT order_items order_items_product_id_fkey
+pg_restore: launching item 4771 FK CONSTRAINT order_items order_items_order_id_fkey
+pg_restore: creating FK CONSTRAINT "public.order_items order_items_order_id_fkey"
+pg_restore: finished item 4751 CONSTRAINT cusinfo cusinfo_pkey
+pg_restore: launching item 4949 SEQUENCE SET cusinfo_id_seq
+pg_restore: executing SEQUENCE SET cusinfo_id_seq
+pg_restore: finished item 4771 FK CONSTRAINT order_items order_items_order_id_fkey
+pg_restore: launching item 4770 FK CONSTRAINT orders orders_user_id_fkey
+pg_restore: creating FK CONSTRAINT "public.orders orders_user_id_fkey"
+pg_restore: finished item 4949 SEQUENCE SET cusinfo_id_seq
+pg_restore: launching item 4928 TABLE DATA cart_items
+pg_restore: processing data for table "public.cart_items"
+pg_restore: finished item 4770 FK CONSTRAINT orders orders_user_id_fkey
+pg_restore: launching item 4773 FK CONSTRAINT order_items order_items_user_id_fkey
+pg_restore: creating FK CONSTRAINT "public.order_items order_items_user_id_fkey"
+pg_restore: finished item 4773 FK CONSTRAINT order_items order_items_user_id_fkey
+pg_restore: launching item 4947 SEQUENCE SET cart_items_id_seq
+pg_restore: executing SEQUENCE SET cart_items_id_seq
+pg_restore: finished item 4924 TABLE DATA sessions
+pg_restore: launching item 4766 FK CONSTRAINT sessions sessions_user_id_fkey
+pg_restore: creating FK CONSTRAINT "public.sessions sessions_user_id_fkey"
+pg_restore: finished item 4926 TABLE DATA carts
+pg_restore: launching item 4759 CONSTRAINT carts carts_pkey
+pg_restore: creating CONSTRAINT "public.carts carts_pkey"
+pg_restore: finished item 4947 SEQUENCE SET cart_items_id_seq
+pg_restore: launching item 4951 SEQUENCE SET orders_id_seq
+pg_restore: executing SEQUENCE SET orders_id_seq
+pg_restore: finished item 4766 FK CONSTRAINT sessions sessions_user_id_fkey
+pg_restore: launching item 4755 CONSTRAINT sessions sessions_pkey
+pg_restore: creating CONSTRAINT "public.sessions sessions_pkey"
+pg_restore: finished item 4759 CONSTRAINT carts carts_pkey
+pg_restore: launching item 4767 FK CONSTRAINT carts carts_user_id_fkey
+pg_restore: creating FK CONSTRAINT "public.carts carts_user_id_fkey"
+pg_restore: finished item 4951 SEQUENCE SET orders_id_seq
+pg_restore: launching item 4948 SEQUENCE SET carts_id_seq
+pg_restore: executing SEQUENCE SET carts_id_seq
+pg_restore: finished item 4755 CONSTRAINT sessions sessions_pkey
+pg_restore: launching item 4757 CONSTRAINT sessions sessions_token_key
+pg_restore: creating CONSTRAINT "public.sessions sessions_token_key"
+pg_restore: finished item 4948 SEQUENCE SET carts_id_seq
+pg_restore: launching item 4950 SEQUENCE SET order_items_id_seq
+pg_restore:pg_restore:  finished item 4767 FK CONSTRAINT carts carts_user_id_fkey
+executing SEQUENCE SET order_items_id_seq
+pg_restore: launching item 4952 SEQUENCE SET products_id_seq
+pg_restore: executing SEQUENCE SET products_id_seq
+pg_restore: finished item 4928 TABLE DATA cart_items
+pg_restore: launching item 4769 FK CONSTRAINT cart_items cart_items_product_id_fkey
+pg_restore: creating FK CONSTRAINT "public.cart_items cart_items_product_id_fkey"
+pg_restore: finished item 4757 CONSTRAINT sessions sessions_token_key
+pg_restore: launching item 4953 SEQUENCE SET sessions_id_seq
+pg_restore: executing SEQUENCE SET sessions_id_seq
+pg_restore: finished item 4950 SEQUENCE SET order_items_id_seq
+pg_restore: finished item 4952 SEQUENCE SET products_id_seq
+pg_restore: finished item 4769 FK CONSTRAINT cart_items cart_items_product_id_fkey
+pg_restore: launching item 4761 CONSTRAINT cart_items cart_items_pkey
+pg_restore: creating CONSTRAINT "public.cart_items cart_items_pkey"
+pg_restore: finished item 4953 SEQUENCE SET sessions_id_seq
+pg_restore: finished item 4761 CONSTRAINT cart_items cart_items_pkey
+pg_restore: launching item 4768 FK CONSTRAINT cart_items cart_items_cart_id_fkey
+pg_restore: creating FK CONSTRAINT "public.cart_items cart_items_cart_id_fkey"
+pg_restore: finished item 4768 FK CONSTRAINT cart_items cart_items_cart_id_fkey
+pg_restore: finished main parallel loop
