@@ -47,7 +47,7 @@ export default async function RootLayout({ children }) {
 
           <footer className="bg-blue-600 text-white py-6 mt-auto">
             <div className="container mx-auto text-center">
-              <p>&copy; 2023 Symbi Ecommerce. All rights reserved.</p>
+              <p>&copy; 2025 Tedros Zemichael. All rights reserved.</p>
             </div>
           </footer>
         </div>
